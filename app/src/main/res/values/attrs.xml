@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TumblrButton">
+        <attr name="tb_color" format="color"/>
+        <attr name="tb_radius" format="dimension"/>
+        <attr name="tb_label" format="string"/>
+        <attr name="tb_fill_color" format="color"/>
+        <attr name="tb_label_color" format="color"/>
+        <attr name="tb_icon" format="reference"/>
+        <attr name="tb_icon_padding" format="dimension"/>
+        <attr name="tb_margin" format="dimension"/>
+        <attr name="android:gravity" />
+    </declare-styleable>
+</resources>

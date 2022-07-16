@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTopStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="top start"
+        app:layout_constraintBottom_toTopOf="@id/btnTopEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTopEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top End"
+        app:layout_constraintBottom_toTopOf="@id/btnBottomEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTopStart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBottomEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom End"
+        app:layout_constraintBottom_toTopOf="@id/btnBottomStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTopEnd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBottomStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBottomEnd" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="btnBottomEnd,btnBottomStart,btnTopEnd,btnTopStart" />
+
+    <ru.ozon.tumblr_button.tumblr_button.TumblrButton
+        android:id="@+id/tumblr_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tb_icon="@drawable/ic_add"
+        app:tb_label="Добавить кота"
+        app:tb_label_color="@color/white"
+        app:tb_margin="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
